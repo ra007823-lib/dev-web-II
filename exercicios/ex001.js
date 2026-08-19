@@ -1,6 +1,6 @@
 const form  = document.querySelector('form');
-const resp = document.querySelector('Descricao');
-const resp1 = document.querySelector('Oferta');
+const resp = document.querySelector('#Descricao');
+const resp1 = document.querySelector('#Oferta');
 
 form.addEventListener("submit", (e)=>{
     const nome = (form.inProduto.value);

@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../modelo/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>
+                <h1>Supermercado JS
                     <form action="">
-                        <p><input type="text" id="inProduto"></p>
-                        <p><input type="text" id="inValor"></p>
+                        <p>Produto:<input type="text" id="inProduto" required></p>
+                        <p>Preço R$:<input type="text" id="inValor" required></p>
+                        <input type="submit" value="Ver Promoção" class="btn btn-warning">
                     </form>
                 </h1>
             </div>
         </div>
     </div>
+    <h3 id="a1"></h3>
+    <h3 id="a2"></h3>
+    <script src="ex003.js"></script>
 </body>
 </html>
