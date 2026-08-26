@@ -1,0 +1,52 @@
+<script>
+    // const hora = 14;
+    // if (hora < 12){
+    //     alert("bom dia!")
+    // }
+    // else if(hora < 18){
+    //     alert("boa tarde!")
+    // }
+    // else{
+    //     alert("boa noite!")
+    // }
+
+    // const idade = 22;
+    // const temCarteira = true;
+
+    // if(idade>=18 && temCarteira){
+    //     alert("pode dirigir!");
+    // }
+    // else if(idade >=18 && !temCarteira){
+    //     alert("Tem idade suficiente, mas precisa tirar a CNH.");
+    // }
+    // else{
+    //     alert("não pode dirigir.")
+    // }
+
+    // const diaDaSemana = "sábado"
+    // const ehFeriado = false;
+    // if(diaDaSemana =="sábado" || diaDaSemana =="domingo" || ehFeriado){
+    //     alert("dia de descanço")
+    // }
+    // else{
+    //     alert("Dia útil: bora trabalhar")
+    // }
+
+    const usuarioLogado = true;
+    const ehAdmin = false;
+    const temPermissaoEspecial = true;
+
+    //o usuario tem acesso se estiver logado e for admin ou tiver permissão especial
+
+    if(usuarioLogado && (ehAdmin || temPermissaoEspecial)){
+        alert("Acesso concedido ao painel")
+    }
+    else if(usuarioLogado && !ehAdmin){
+        alert("Acesso negado: permissões insuficientes")
+    }
+    else{
+        alert("Acesso negado: faça login primeiro")
+    }
+
+
+</script>
