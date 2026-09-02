@@ -8,6 +8,7 @@ frm.addEventListener("submit",(e)=>{
     const saque = Number(frm.inSaque.value);
     
     if(saque%10 != 0){
+        console.log(saque);
         alert("Valor inválido para notas disponiveis(R$10,00 / R$50,00 / R$100,00)")
         frm.inSaque.focus();
         return;
