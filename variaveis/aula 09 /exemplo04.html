@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Caixa Eletronico</title>
+    <link rel="stylesheet" href="../modelo/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <img src="../modelo/img/04caixa.jpg" alt="CaixaEletronico" class="img-fluid">
+            </div>
+            <div class="col-9">
+                <h1>Programa Caixa Eletronico</h1>
+                <form action="">
+                    <p>Valor do Saque R$: 
+                        <input type="number" id="inSaque" min="10" step="0.01" required>
+                    </p>
+                    <input type="submit" value="Exibir notas para Saque" class="btn btn-success">
+                </form>
+                <h3 id="outresp1"></h3>
+                <h3 id="outresp2"></h3>
+                <h3 id="outresp3"></h3>
+            </div>
+        </div>
+    </div>
+    <script src="../modelo/js/ex04.js"></script>
+</body>
+</html>
