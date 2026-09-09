@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa do mês</title>
+    <link rel="stylesheet" href="../modelo/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="../modelo/img/03contasMes.jpg" alt="Contas do mês" class="img-fluid">
+            </div>
+            <div class="col-8">
+                <h1>Programa contas do mês</h1>
+                <form action="">
+                    <p>Descrição da conta:<input type="text" id="inDescricao" required></p>
+                    <p>Valor a pagar R$:<input type="number" id="inValor" min="0" step="0.01" required></p>
+                    <input type="submit" value="Registar conta" class="btn btn-success">
+                </form>
+                <p>&nbsp;</p>
+                <pre id="outResp1"></pre>
+                <pre id="outResp2"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="../aula 08 09 26/js/ex04.js"></script>
+</body>
+</html>
