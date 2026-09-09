@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../modelo/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../variaveis/modelo/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-3">
-                <img src="../modelo/img/exerc.jpg" alt="imgBase" class="img-fluid">
+                <img src="../variaveis/modelo/img/exerc.jpg" alt="imgBase" class="img-fluid">
             </div>
             <div class="col-9">
-                
+                <form action="">
+                    <p>Lado A:
+                        <input type="number" id="inA" required min="1">
+                    </p>
+                    <p>Lado B:
+                        <input type="number" id="inB" min="1" required>
+                    </p>
+                    
+                    <p>Lado C:
+                        <input type="number" id="inC" min="1" required>
+                    </p>
+                    <input type="submit" value="Verificar Dados" class="btn btn-success">
+                </form>
+                <pre id="outResp1"></pre>
+                <pre id="outResp2"></pre>
             </div>
         </div>
     </div>
-    
+    <script src="js/ex004.js"></script>
 </body>
 </html>

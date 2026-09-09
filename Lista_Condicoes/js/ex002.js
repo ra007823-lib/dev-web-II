@@ -5,11 +5,14 @@ frm.addEventListener("submit",(e)=>{
     e.preventDefault();
     const velPerm = Number(frm.inPermitida.value);
     const velCond = Number(frm.inCondutor.value);
-    if((velPerm + (velPerm*.2)) >= velCond){
-        resp.innerText = "Multa Leve."
+    if(velCond <= velPerm){
+        resp.innerText = "Sem multa."
     }
-    if((velPerm + (velPerm*.2)<=(velCond))){
-        resp.innerText = "Multa Grave."
+    else if(velCond <= (velPerm + (velPerm*.2))){
+        resp.innerText = "Multa leve."
+    }
+    else{
+        resp.innerText = "Multa leve."
     }
     
 })
