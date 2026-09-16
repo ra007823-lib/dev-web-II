@@ -30,3 +30,17 @@ frm.btUrgencia.addEventListener("click",()=>{
     frm.inPaciente.value = "";
     frm.inPaciente.focus();
 });
+
+frm.btAtender.addEventListener("click",()=>{
+    //se o tamanho do vetor = 0
+    if(pacientes.length==0){
+        alert("Não há pacientes na lista de espera");
+        frm.inPaciente.focus();
+        return
+    }
+    const atender = pacientes.shift()//remove o primeiro da fila do vetor
+    respNome.innerText = atender
+    let listas = ""
+    pacientes.forEach((paciente,i)=>{(listas +=`${i+1}° - ${paciente}\n`)});
+    respLista.innerText = listas
+});
