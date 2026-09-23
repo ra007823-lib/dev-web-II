@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../modelo/css/bootstrap.min.css">
+</head>
+<body>
+    <script>
+        const carros = []
+        carros.push({modelo: "Sandero",preco: 46500});
+        carros.push({modelo:"Palio", preco: 37000});
+        for (const carro of carros){
+            console.log(`${carro.modelo} - R$${carro.preco}`)
+        }
+        const carro ={
+            marca: "Toyota",
+            cor: "Preta",
+            ano: "2022"
+        }
+        const modelo = 'Fiesta'
+        const perco = 26800
+        carros.push({modelo,preco})
+        //-----------------------
+        const pacientes = ["Ana","Carlos","Sofia"]
+        const [a,b,c] = pacientes
+        //-----------------------
+        const idades = [12,16,15,17,14]
+        let maiores = false 
+        for(const idade of idades){
+            if(idade >=18){
+                console.log(idade)
+                maiores = true
+            }
+        }
+        if(!maiores){
+            console.log("Não há idades > 18!")
+        }
+        //-----------------------
+        const numeros = [10,13,20,8,15]
+        const dobros = numeros.map(num=>num*2)
+        //-----------------------
+        const amigos = [
+            {nome: "Ana", idade: 20},
+            {nome: "Bruno", idade: 17},
+            {nome: "Cátia", idade: 25}
+        ]
+        const amigos2 = amigos.map(aux=>({nome:aux.nome,nasc:2026-aux.idade}))
+
+    </script>
+</body>
+</html>
