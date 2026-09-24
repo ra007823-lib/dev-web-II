@@ -47,7 +47,31 @@
             {nome: "Cátia", idade: 25}
         ]
         const amigos2 = amigos.map(aux=>({nome:aux.nome,nasc:2026-aux.idade}))
+        //-----------------------
+        const numeros = [10,13,20,8,15]
+        const pares = numeros.filter(num=>num%2==0)
+        console.log(pares.join(" | "))
+        //-----------------------
+        const amigos = [
+            {nome: "Ana", idade: 20},
+            {nome: "Bruno", idade: 17},
+            {nome: "Cátia", idade: 25}
 
+        ]
+        const amigos2 = amigos.filter(aux=>aux.idade>=21 || aux.nome.includes("B"))
+        for(const amigo of amigos2){
+            console.log(`${amigo.nome} - idade ${amigo.idade}`)
+        }
+        //-----------------------
+        const numeros = [10,13,20,8,15]
+        const soma = numeros.reduce((acumulador,num)=>acumulador+num,0)
+        console.log(`Sama: ${soma}`)
+        //-----------------------
+        let acumulador = 0
+        for(const num of numeros){
+            acumulador = acumulador+num 
+        }
+        console.log(`Soma: ${soma}`)
     </script>
 </body>
 </html>
