@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aula Bootstrap 5.3 - Formulários</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <div class="container py-5">
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <h2 class="mb-4">Laboratório de Formulários</h2>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="nome" class="form-label">Nome Fantasia ou primeiro nome</label>
+              <input type="text" class="form-control" id="nome" name="nome" />
+            </div>
+            <div class="col-md-6">
+              <span class="form-label d-block mb-2">Pessoa</span>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pessoa" id="pessoaFisica" value="fisica" />
+                <label class="form-check-label" for="pessoaFisica">Física</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="pessoa" id="pessoaJuridica" value="juridica" />
+                <label class="form-check-label" for="pessoaJuridica">Jurídica</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <label for="razao" class="form-label">Razão</label>
+              <input type="text" class="form-control" id="razao" name="razao" />
+            </div>
+            <div class="col-md-4">
+              <label for="cnpj" class="form-label">CNPJ</label>
+              <input type="text" class="form-control" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" />
+            </div>
+            <div class="col-md-8">
+              <label for="endereco" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="endereco" name="endereco" />
+            </div>
+            <div class="col-md-4">
+              <label for="bairro" class="form-label">Bairro</label>
+              <input type="text" class="form-control" id="bairro" name="bairro" />
+            </div>
+            <div class="col-md-6">
+              <label for="cidade" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="cidade" name="cidade" />
+            </div>
+            <div class="col-md-3">
+              <label for="estado" class="form-label">Estado</label>
+              <select id="estado" name="estado" class="form-select">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG" selected>Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="cep" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="cep" name="cep" placeholder="00000-000" />
+            </div>
+            <div class="col-md-4">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input type="tel" class="form-control" id="telefone" name="telefone" />
+            </div>
+            <div class="col-md-4">
+              <label for="celular" class="form-label">Celular</label>
+              <input type="tel" class="form-control" id="celular" name="celular" />
+            </div>
+            <div class="col-md-4">
+              <label for="fax" class="form-label">Fax</label>
+              <input type="text" class="form-control" id="fax" name="fax" />
+            </div>
+            <div class="col-md-6">
+              <label for="contato" class="form-label">Contato</label>
+              <input type="text" class="form-control" id="contato" name="contato" />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" name="email" />
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="receberEmails" name="receberEmails" checked />
+                <label class="form-check-label" for="receberEmails">
+                  Receber e-mails de aviso sobre novas licitações
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <span class="form-label d-block">Tipo de empresa</span>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoEmpresa" id="tipoMicro" value="micro" />
+                <label class="form-check-label" for="tipoMicro">MICRO EMPRESAS / EMPRESAS DE PEQUENO PORTE</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tipoEmpresa" id="tipoDemais" value="demais" />
+                <label class="form-check-label" for="tipoDemais">DEMAIS FORMAS DE CONSTITUIÇÃO</label>
+              </div>
+            </div>
+            <div class="col-12 text-end">
+              <button type="submit" class="btn btn-primary">Salvar cadastro</button>
+            </div>
+            <div class="col-12">
+              <p class="mb-0">ATENÇÃO: Este cadastro não substitui o cadastro de fornecedores do município de São Sebastião do Paraíso</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
